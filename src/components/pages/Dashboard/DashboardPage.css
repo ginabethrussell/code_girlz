@@ -88,7 +88,7 @@
     font-weight: 400;
     color: #7731b4;
 }
-.module a, .module .activities a {
+/* .module a, .module .activities a {
     text-decoration:none;
     font-size: 1.4rem;
     cursor: pointer;
@@ -99,6 +99,26 @@
 }
 .module a:hover {
     color: #4bbac9;
+} */
+.module .activities {
+    display: flex;
+}
+.module button.dashboard {
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    border: 0.0625rem solid #7731b4;
+    width: 100px;
+    background-color:  #7731b4;
+    color: #fff;
+    padding: 8px 8px;
+    display: flex;
+    justify-content: center;
+}
+.module button.dashboard:hover {
+    opacity: 0.65;
+}
+.module button.dashboard:last-of-type {
+    margin-left: 16px;
 }
 
 @media (max-width: 800px){
