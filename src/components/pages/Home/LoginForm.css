@@ -1,6 +1,6 @@
 .form-wrapper {
-    width: 60%;
-    max-width: 300px;
+    width: 70%;
+    max-width: 350px;
     margin: 0 auto;
     min-height: 60vh;
     display: flex;
@@ -76,7 +76,8 @@
     font-size: 1.8rem;
 }
 .login-form button:hover {
-    opacity: 65%;
+    background-color: #4bbac9;
+    color: #7731b4;
 }
 
 .login-form a {
