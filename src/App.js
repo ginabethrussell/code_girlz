@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Route, Switch, useHistory } from 'react-router-dom';
 import { HomePage } from './components/pages/Home';
 import { DashboardPage } from './components/pages/Dashboard';
+import { LessonPage } from './components/pages/Lesson';
 import axios from 'axios';
 
 import './App.css';
@@ -34,6 +35,7 @@ function App() {
 
   return (
     <Switch>
+      <Route path='/dashboard/lesson1' render={() => <LessonPage user={user}/> } />
       <Route path='/dashboard' render={() => <DashboardPage user={user}/>}/>
       <Route path='/' render={() => <HomePage loginUser={loginUser}/>}/>
     </Switch>

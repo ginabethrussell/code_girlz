@@ -13,7 +13,7 @@ function RenderDashboardPage(props){
 
     const handleSelection= (e)=> {
         e.preventDefault();
-        history.push(`${match.url}/less1`);
+        history.push(`${match.url}/lesson1`);
 
     }
     return (
