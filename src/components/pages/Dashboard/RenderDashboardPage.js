@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useHistory, useRouteMatch } from 'react-router-dom';
 import './DashboardPage.css';
 import wizard from '../../../wizard.png';
@@ -8,14 +8,20 @@ console.log(data);
 function RenderDashboardPage(props){
     const {user} = props;
     const [moduleData, setModuleData] = useState(data);
+    
     const history = useHistory();
     const match = useRouteMatch(); 
 
-    const handleSelection= (e)=> {
-        e.preventDefault();
-        history.push(`${match.url}/lesson1`);
+    const handleLessonSelection = (id) => {
+        history.push(`${match.url}/lesson${id}`);  
+    };
+    const handleChallengeSelection = (id) => {
+        history.push(`${match.url}/challenge${id}`);
+    };
+    const handleProjectSelection = (id) => {
+        history.push(`${match.url}/project${id}`)
+    };
 
-    }
     return (
         <div className='dashboard-wrapper'>
             <div className='header'>
@@ -32,19 +38,21 @@ function RenderDashboardPage(props){
             <div className='module-container'>
                 {
                     moduleData.map(module => (
-                        <div key={module.lessonUrl} className='module'>
+                        <div key={module.title} className='module'>
                             <h3>{module.title}</h3>
                             {
                                 module.lessonUrl !== null ?
                                 (<>
                                 <div className='activities'>
-                                <button onClick={handleSelection}>Lesson</button>
-                                    <a href={`${module.lessonUrl}`} target='_blank'>Lesson</a>
-                                    <a href={`${module.challengeUrl}`} target='_blank'>Challenge</a>
+                                <button className='dashboard' onClick={()=>{handleLessonSelection(module.id)}}>Lesson</button>
+                                <button className='dashboard' onClick={() => {handleChallengeSelection(module.id)}}>Challenge</button>
+                                    {/* <a href={`${module.lessonUrl}`} target='_blank'>Lesson</a>
+                                    <a href={`${module.challengeUrl}`} target='_blank'>Challenge</a> */}
                                 </div>
                                 </>) :
                                 (<>
-                                    <a href={`${module.projectUrl}`} target='_blank'>Project {module.projectNumber}</a>
+                                    <button className='dashboard' onClick={() => {handleProjectSelection(module.id)}}>Project</button>
+                                    {/* <a href={`${module.projectUrl}`} target='_blank'>Project {module.projectNumber}</a> */}
                                 </>)
                             }   
                         </div>

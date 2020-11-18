@@ -1,37 +1,27 @@
 
 # Intro to Python and Repl.it
 
-
 ## Summary 
 
-Watch the video introduction below.
-📹 
+[Watch the intro video 📹](https://www.loom.com/share/f0a11e2610664b729620c4ab23aeec1d)
 
-[![Watch the video](./less1intro.png)](https://www.loom.com/share/f0a11e2610664b729620c4ab23aeec1d)
-
-
-What am I learning about today?
-
-
+#### What am I learning about today?
 
 *   What is Python?
 *   What is Repl.it and how do I use it to write code?
 *   How do I print to the screen?
 *   How do I leave comments for myself or other programmers?
 
-When I complete this lesson: 
+#### When I complete this lesson: 
+
+#####   I can:
+
+*   log into repl.it and create a Python program
+*   use the Python print command
+*   write a comment in my code
 
 
-
-*   I can:
-    *   log into repl.it and create a Python program
-    *   use the Python print command
-    *   write a comment in my code
-
-
-# Materials You Will Need
-
-
+## Materials You Will Need
 
 *   Your Laptop/Computer
 *   Chrome Browser
@@ -39,7 +29,7 @@ When I complete this lesson:
 *   A curious mind and a little persistence!
 
 
-# Let’s Get Started
+## Let’s Get Started
 
 **What is Python**
 
@@ -53,17 +43,18 @@ Text-based programs can be written using many tools. If you have programmed in S
 
 To write Python, we need to use a tool that will be able to understand and run our code. Repl.it has a Python compiler/interpreter built-in so it’s a great place for us to start. 
 
-Using Repl.it is free. Let’s set up your account using the video guide below 📹 
+Using Repl.it is free. Let’s set up your account together.
 
-[![Watch the video](./less1replit.png)](https://www.loom.com/share/072364d175fe47ffa2aac655fd28aa88)
+[Set Up Your Repl.it Account 📹 ](https://www.loom.com/share/072364d175fe47ffa2aac655fd28aa88)
 
 **Writing Your First Program**
 
 Now that you have an account, let’s write our first program. A common tradition is to write a “Hello World” program whenever a programmer uses a new platform or learns a new language. 
 
-Let’s do that together. 📹 
+Let’s do that together.
 
-[![Watch the video](./less1helloworld.png)](https://www.loom.com/share/ec95e0156de24779a2b16a49fdb54ac3)
+[Code Along - Hello World 📹](https://www.loom.com/share/ec95e0156de24779a2b16a49fdb54ac3)
+
 **The print Command and Comments**
 
 **print**
@@ -72,7 +63,9 @@ Python has several built-in commands created for us that make it easy to get sta
 
 In our repl.it program we typed:
 
-	`print ("Hello World")`
+```python
+print ("Hello World")
+```
 
 When we ran the code, Hello World printed in our console.
 
@@ -111,7 +104,7 @@ Write good comments because the “other developer” reading your code may just
 Comments in Python begin with a hashtag #, also called a pound sign, or an octothorpe. This symbol signals to the interpreter that it can ignore the line in your program.
 
 
-```
+```python
 # This is a Python Comment
 ```
 

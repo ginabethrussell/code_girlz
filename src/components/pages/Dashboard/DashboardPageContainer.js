@@ -8,7 +8,7 @@ function DashboardPageContainer(props) {
     return (
         <>
             <Header />
-            <RenderDashboardPage user={user}/>
+            <RenderDashboardPage  user={user}/>
             <Footer />
         </>
     );

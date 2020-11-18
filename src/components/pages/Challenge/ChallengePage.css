@@ -1,0 +1,98 @@
+
+.challenge {
+    font-size: 1.6rem;
+    font-family: Poppins, sans-serif;
+    color: #494331;
+    font-weight: 400;
+    width: 75%;
+    margin: 0 auto;
+    max-width: 960px;
+    line-height: 1.45;
+    padding: .25rem;
+  }
+  
+  .challenge h1,
+  .challenge h2,
+  .challenge h3 {
+    border-bottom: 2px solid #dee1e5;
+    margin-bottom: 1.2rem;
+    padding-bottom: .5rem;
+    font-weight: 600;
+  
+  }
+  .challenge h1 {
+    margin-top: 0;
+    font-size: 3.6rem;
+    color: #7731b4;
+    margin: 1.5rem 0 .5rem;
+    font-weight: 600;
+    line-height: 1.42;
+    text-align: center;
+  }
+  .challenge h2, .challenge h2 a {
+    font-size: 2.6rem;
+    color: #4dbecd;
+  }
+  .challenge li a {
+    text-decoration: none;
+    color: #7731b4;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+  .challenge li a:hover {
+    color:  #4dbecd;
+  }
+  .challenge h3 {
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+  .challenge h4 {
+    font-size: 2rem;
+  }
+  .challenge h5 {
+    font-size: 1.8rem;
+  }
+  .challenge p {
+    font-size: 1.6rem;
+    margin-bottom: 1.3rem;
+  }
+  .challenge p a {
+    text-decoration: none;
+    color: #7731b4;
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+  .challenge code {
+    font-family: "Courier New", monospace;
+    background-color: #fafafa;
+    padding: 8px 16px;
+  }
+  
+  .challenge a:hover,
+  .challenge a:focus,
+  .challenge a:active {
+    color: #4dbecd;
+  }
+  .challenge ul {
+    list-style-type: circle;
+  }
+  
+  .challenge img {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .challenge canvas,
+  .challenge iframe,
+  .challenge video,
+  .challenge svg,
+  .challenge select,
+  .challenge textarea {
+    max-width: 100%;
+  }
+  
+  .challenge blockquote {
+    border-left: 8px solid #fafafa;
+    padding: 1rem;
+  }
+  
