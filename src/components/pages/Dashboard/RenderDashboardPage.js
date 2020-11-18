@@ -29,12 +29,6 @@ function RenderDashboardPage(props){
                 <h1>Level 2 Intro to Python</h1>
                 <Link className='home' to='/'>Home</Link>
             </div>
-            <div className='student-resources'>
-                <h3>Student Resources</h3>
-                <a href='https://repl.it/' target='_blank'>Repl.it</a>
-                <a href='https://docs.python.org/3/' target='_blank'>Python Docs</a>
-                <a href='https://www.w3schools.com/python/default.asp' target='_blank'>W3Schools</a>
-            </div>
             <div className='module-container'>
                 {
                     moduleData.map(module => (
