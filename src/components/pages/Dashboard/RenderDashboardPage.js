@@ -8,7 +8,7 @@ function RenderDashboardPage(props){
     return (
         <div className='dashboard-wrapper'>
                 <Link to='/'>Home</Link>
-                <h1> Welcome back, {user.username}</h1>
+                <h1>Student Dashboard</h1>
 
         </div>
     );
