@@ -65,6 +65,6 @@ Sources:
 *  Use print statements to include an ASCII image that fits your story’s theme
 
 
- ## 🌟 When you finish your game, show off your project to a Coding Coach. 🌟
+ #### 🌟 When you finish your game, show off your project to a Coding Coach. 🌟
 
 ### Next Up Lesson 4 Decisions & Conditionals
