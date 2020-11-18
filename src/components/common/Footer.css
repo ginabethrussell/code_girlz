@@ -1,0 +1,12 @@
+.footer-wrapper {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7731b4;
+    color: #ffffff;
+}
+.footer-wrapper p{
+    font-size: 1.8rem;
+}

@@ -1,24 +1,42 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { Route, Switch, useHistory } from 'react-router-dom';
+import { HomePage } from './components/pages/Home';
+import { DashboardPage } from './components/pages/Dashboard';
+import axios from 'axios';
+
 import './App.css';
 
+const initialUser = {
+    id: '',
+    username: '',
+    password: ''
+}
+
 function App() {
+  const [user, setUser] = useState(initialUser);
+
+  const history = useHistory();
+
+  const loginUser = (newUser) => {
+    const loggedInUser = {};
+    axios
+    .post('https://reqres.in/api/users', newUser)
+    .then(response => {
+      loggedInUser.id = response.data.id;
+      loggedInUser.username = response.data.username;
+      loggedInUser.password = response.data.password;
+      setUser(loggedInUser);
+      history.push('/dashboard');
+    })
+    .catch(err => console.log(err));
+  }
+  console.log(user);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Route path='/dashboard' render={() => <DashboardPage user={user}/>}/>
+      <Route path='/' render={() => <HomePage loginUser={loginUser}/>}/>
+    </Switch>
   );
 }
 
