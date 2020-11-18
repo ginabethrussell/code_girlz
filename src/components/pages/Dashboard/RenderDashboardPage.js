@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './DashboardPage.css';
 import wizard from '../../../wizard.png';
-
+import data from '../../../classData';
+console.log(data);
 
 function RenderDashboardPage(props){
     const {user} = props;
+    const [moduleData, setModuleData] = useState(data);
     return (
         <div className='dashboard-wrapper'>
             <div className='header'>
@@ -13,97 +15,32 @@ function RenderDashboardPage(props){
                 <h1>Level 2 Intro to Python</h1>
                 <Link className='home' to='/'>Home</Link>
             </div>
+            <div className='student-resources'>
+                <h3>Student Resources</h3>
+                <a href='https://repl.it/' target='_blank'>Repl.it</a>
+                <a href='https://docs.python.org/3/' target='_blank'>Python Docs</a>
+                <a href='https://www.w3schools.com/python/default.asp' target='_blank'>W3Schools</a>
+            </div>
             <div className='module-container'>
-                <div className='module'>
-                    <h3>1. Intro to Python and Repl.it</h3>
-                    <div className='activities'>
-                        <a href="">Lesson</a>
-                        <a href="">Challenge</a>
-                    </div>
-                </div>
-                <div className='module'>
-                    <h3>2. Variables and Data Types</h3>
-                    <div className='activities'>
-                        <a href="">Lesson</a>
-                        <a href="">Challenge</a>
-                    </div>
-                </div>
-                <div className='module'>
-                    <h3>3. User Input</h3>
-                    <div className='activities'>
-                        <a href="">Lesson</a>
-                        <a href="">Challenge</a>
-                    </div>
-                </div>
-                <div className='module'>
-                    <h3>Mad Libs</h3>
-                    <a href="">Project 1</a>
-                </div>
-                <div className='module'>
-                    <h3>4. Booleans and Conditionals</h3>
-                    <div className='activities'>
-                        <a href="">Lesson</a>
-                        <a href="">Challenge</a>
-                    </div>
-                </div>
-                <div className='module'>
-                    <h3>5. Chained and Nested Conditionals</h3>
-                    <div className='activities'>
-                        <a href="">Lesson</a>
-                        <a href="">Challenge</a>
-                    </div>
-                </div>
-                <div className='module'>
-                    <h3>6. While Loops, Modules, and Random</h3>
-                    <div className='activities'>
-                        <a href="">Lesson</a>
-                        <a href="">Challenge</a>
-                    </div>
-                </div>
-                <div className='module'>
-                    <h3>Rocket Launch</h3>
-                    <a href="">Project 2</a>
-                </div>
-                <div className='module'>
-                    <h3>7. Lists</h3>
-                    <div className='activities'>
-                        <a href="">Lesson</a>
-                        <a href="">Challenge</a>
-                    </div>
-                </div>
-                <div className='module'>
-                    <h3>8. For Loops</h3>
-                    <div className='activities'>
-                        <a href="">Lesson</a>
-                        <a href="">Challenge</a>
-                    </div>
-                </div>
-                <div className='module'>
-                    <h3>1D Battleship</h3>
-                    <a href="">Project 3</a>
-                </div>
-                <div className='module'>
-                    <h3>9. Functions</h3>
-                    <div className='activities'>
-                        <a href="">Lesson</a>
-                        <a href="">Challenge</a>
-                    </div>
-                </div>
-                <div className='module'>
-                    <h3>10. Functions with Arguments and Return Statements</h3>
-                    <div className='activities'>
-                        <a href="">Lesson</a>
-                        <a href="">Challenge</a>
-                    </div>
-                </div>
-                <div className='module'>
-                    <h3>The Camel Race Game</h3>
-                    <a href="">Project 4</a>
-                </div>
-                <div className='module'>
-                    <h3>Capstone Project</h3>
-                    <a href="">Project 5</a>
-                </div>
+                {
+                    moduleData.map(module => (
+                        <div key={module.lessonUrl} className='module'>
+                            <h3>{module.title}</h3>
+                            {
+                                module.lessonUrl !== null ?
+                                (<>
+                                <div className='activities'>
+                                    <a href={`${module.lessonUrl}`} target='_blank'>Lesson</a>
+                                    <a href={`${module.challengeUrl}`} target='_blank'>Challenge</a>
+                                </div>
+                                </>) :
+                                (<>
+                                    <a href={`${module.projectUrl}`} target='_blank'>Project {module.projectNumber}</a>
+                                </>)
+                            }   
+                        </div>
+                    ))
+                }
             </div>
         </div>
     );

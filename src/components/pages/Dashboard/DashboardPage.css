@@ -18,6 +18,7 @@
 .dashboard-wrapper .header {
     color: white;
     width: 80%;
+    max-width: 960px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -34,8 +35,38 @@
     font-weight: 600;
     margin-left: auto;
 }
+.student-resources {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.student-resources h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.student-resources a {
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    border: 0.0625rem solid #7731b4;
+    -webkit-box-shadow: 0 0.25rem 0 0 #7731b4;
+    box-shadow: 0 0.25rem 0 0 #7731b4;
+    width: 125px;
+    text-decoration: none;
+    background-color:  #7731b4;
+    color: #fff;
+    padding: 5px 8px;
+    display: flex;
+    justify-content: center;
+}
+.student-resources a:hover {
+    opacity: 0.65;
+}
 .module-container {
     width: 75%;
+    max-width: 800px;
     margin: 0 auto;
 }
 .module {
@@ -45,6 +76,7 @@
     -webkit-box-shadow: 0 0.25rem 0 0 #edf2f6;
     box-shadow: 0 0.25rem 0 0 #edf2f6;
     padding: 1rem;
+    padding-left: 1.6rem;
     margin: 2rem 0;
     display: flex;
     align-items: baseline;
@@ -66,4 +98,44 @@
 }
 .module a:hover {
     color: #4bbac9;
+}
+
+@media (max-width: 800px){
+    .dashboard-wrapper .header {
+        width: 90%;
+        flex-direction: column-reverse;
+    }
+    .dashboard-wrapper .wizard-logo {
+        height: 20vmin;
+        margin-right: 0;
+    }
+    .student-resources {
+        width: 90%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .student-resources h3 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px){ 
+    .dashboard-wrapper .wizard-logo {
+        height: 20vmin;
+        margin-right: 0;
+    }
+    .student-resources {
+        flex-direction: column;
+    }
+    .student-resources a {
+        margin-bottom: 1.6rem;
+    }
+   .module {
+       flex-direction: column;
+   }
+   .activities a:last-of-type, .module a{
+    margin-left: 0;
+}
+
 }

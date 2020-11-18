@@ -21,6 +21,7 @@ const classData = [
     title: 'Mad Libs',
     lessonUrl: null,
     challengeUrl: null,
+    projectNumber: '1',
     projectUrl: 'https://docs.google.com/document/d/1bHi5y8m5WqqDboSjXZgSxr7zF_TC7pBf-szmeuw_Sxg/edit?usp=sharing'
 },
 {
@@ -39,12 +40,14 @@ const classData = [
     title: '6. While Loops, Modules, and Random',
     lessonUrl: 'https://docs.google.com/document/d/1BSdA2A6jOaTPz7p4S2vLXx8W5da9ungUOxyuuX6FzSs/edit?usp=sharing',
     challengeUrl: 'https://docs.google.com/document/d/1fS-olwXQytklOBa7fSbowBVHhGBH9ipG2c4E4lvlN74/edit?usp=sharing',
+    projectNumber: '2',
     projectUrl: null
 },
 {
     title: 'Rocket Launch',
     lessonUrl: null,
     challengeUrl: null,
+    projectNumber: '2',
     projectUrl: 'https://docs.google.com/document/d/1h2ByVVE-3ZmFKLjQ451-mzpi_CE12mhYv6CsiAqDMBo/edit?usp=sharing'
 },
 {
@@ -63,6 +66,7 @@ const classData = [
     title: '1D Battleship',
     lessonUrl: null,
     challengeUrl: null,
+    projectNumber: '3',
     projectUrl: 'https://docs.google.com/document/d/1_saf6VIA9EXV1gO-zXJLescGnT12ENMHET_8RwAGuQU/edit?usp=sharing'
 },
 {
@@ -81,12 +85,14 @@ const classData = [
     title: 'The Camel Race Game',
     lessonUrl: null,
     challengeUrl: null,
+    projectNumber: '4',
     projectUrl: ''
 },
 {
     title: 'Capstone Project',
     lessonUrl: null,
     challengeUrl: null,
+    projectNumber: '5',
     projectUrl: ''
 }
 ];
