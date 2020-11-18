@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory, useRouteMatch } from 'react-router-dom';
 import './DashboardPage.css';
 import wizard from '../../../wizard.png';
 import data from '../../../classData';
@@ -8,6 +8,14 @@ console.log(data);
 function RenderDashboardPage(props){
     const {user} = props;
     const [moduleData, setModuleData] = useState(data);
+    const history = useHistory();
+    const match = useRouteMatch(); 
+
+    const handleSelection= (e)=> {
+        e.preventDefault();
+        history.push(`${match.url}/less1`);
+
+    }
     return (
         <div className='dashboard-wrapper'>
             <div className='header'>
@@ -30,6 +38,7 @@ function RenderDashboardPage(props){
                                 module.lessonUrl !== null ?
                                 (<>
                                 <div className='activities'>
+                                <button onClick={handleSelection}>Lesson</button>
                                     <a href={`${module.lessonUrl}`} target='_blank'>Lesson</a>
                                     <a href={`${module.challengeUrl}`} target='_blank'>Challenge</a>
                                 </div>
