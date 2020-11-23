@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Coding Wizards
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## [CodingWizardsU](https://codingwizardsu.netlify.app/)
+This project is deployed with Netlify
+
 
 ## Available Scripts
 
