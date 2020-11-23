@@ -5,6 +5,8 @@ import { DashboardPage } from './components/pages/Dashboard';
 import { LessonPage } from './components/pages/Lesson';
 import { ChallengePage } from './components/pages/Challenge';
 import { ProjectPage } from './components/pages/Project';
+import { AdminPage } from './components/pages/Admin';
+
 import axios from 'axios';
 
 import './App.css';
@@ -29,7 +31,13 @@ function App() {
       loggedInUser.username = response.data.username;
       loggedInUser.password = response.data.password;
       setUser(loggedInUser);
-      history.push('/dashboard');
+      if (loggedInUser.username == 'Kyle'
+        || loggedInUser.username == 'Chris' 
+        || loggedInUser.username == 'Gina Beth'){
+        history.push('/admin');
+      }else{
+        history.push('/dashboard');
+      }  
     })
     .catch(err => console.log(err));
   }
@@ -42,6 +50,7 @@ function App() {
       <Route path='/dashboard/challenge:id' render={() => <ChallengePage user={user}/> } />
       <Route path='/dashboard/lesson:id' render={() => <LessonPage user={user}/> } />
       <Route exact path='/dashboard' render={() => <DashboardPage user={user}/>}/>
+      <Route path='/admin' render={()=> <AdminPage admin={user} />} />
       <Route path='/' render={() => <HomePage loginUser={loginUser}/>}/>
     </Switch>
   );
