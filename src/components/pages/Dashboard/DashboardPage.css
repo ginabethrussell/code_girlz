@@ -35,36 +35,7 @@
     font-weight: 600;
     margin-left: auto;
 }
-.student-resources {
-    width: 80%;
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-.student-resources h3 {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    color: #fff;
-}
-.student-resources a {
-    font-size: 1.4rem;
-    border-radius: 0.5rem;
-    border: 0.0625rem solid #7731b4;
-    -webkit-box-shadow: 0 0.25rem 0 0 #7731b4;
-    box-shadow: 0 0.25rem 0 0 #7731b4;
-    width: 125px;
-    text-decoration: none;
-    background-color:  #7731b4;
-    color: #fff;
-    padding: 5px 8px;
-    display: flex;
-    justify-content: center;
-}
-.student-resources a:hover {
-    opacity: 0.65;
-}
+
 .module-container {
     width: 75%;
     max-width: 800px;
@@ -88,18 +59,7 @@
     font-weight: 400;
     color: #7731b4;
 }
-/* .module a, .module .activities a {
-    text-decoration:none;
-    font-size: 1.4rem;
-    cursor: pointer;
-}
-.activities a:last-of-type, .module a{
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-.module a:hover {
-    color: #4bbac9;
-} */
+
 .module .activities {
     display: flex;
 }
@@ -116,11 +76,21 @@
 }
 .module button.dashboard:hover {
     opacity: 0.65;
+    cursor: pointer
 }
 .module button.dashboard:last-of-type {
     margin-left: 16px;
 }
+.module button.dashboard:disabled {
+    cursor: not-allowed;
+}
+.module button.dashboard:disabled .lock-icon{
+    display: inline;
+} 
 
+.module button.dashboard .lock-icon {
+    display: none;
+}
 @media (max-width: 800px){
     .dashboard-wrapper .header {
         width: 90%;
@@ -140,7 +110,9 @@
         text-align: center;
     }
 }
-
+.dashboard-wrapper span {
+    margin-right: 5px;
+}
 @media (max-width: 500px){ 
     .dashboard-wrapper .wizard-logo {
         height: 20vmin;
