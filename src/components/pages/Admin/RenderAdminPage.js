@@ -12,9 +12,11 @@ const initialFormState = {
     activity: '',
     comments: ''
 }
+
 function RenderAdminPage(props){
     const {admin} = props;
-    const [formState, setFormState] = useState({...initialFormState, admin: admin.username});
+    const adminFormState = {...initialFormState, admin: admin.username}
+    const [formState, setFormState] = useState(adminFormState);
 
     const handleChange = (e) => {
         const newFormState = {...formState, [e.target.name]: e.target.value};
@@ -23,7 +25,7 @@ function RenderAdminPage(props){
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("Submission: ",formState);
-        setFormState(initialFormState);
+        setFormState(adminFormState);
     }
 
     
