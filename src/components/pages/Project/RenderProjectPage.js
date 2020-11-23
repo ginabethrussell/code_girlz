@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Link, useParams, useHistory } from 'react-router-dom';
 import madlibs from '../../../markdown/madlibs.md';
+import ProjectSubmissionUrl from '../../common/ProjectUrlSubmission';
 import './ProjectPage.css';
 
 function RenderProjectPage(props){
@@ -23,6 +24,7 @@ function RenderProjectPage(props){
         <div className="project">
             <Link to='/dashboard'>Return to Dashboard</Link>
             <ReactMarkdown source={project} /> 
+            <ProjectSubmissionUrl />
         </div>
       );
 }
