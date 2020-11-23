@@ -1,0 +1,30 @@
+.project-url-wrapper label {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #7731b4;
+    margin-bottom: 12px;
+}
+.project-url-wrapper input[type=url] {
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+.project-url-wrapper button {
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    border: 0.0625rem solid #7731b4;
+    width: 100px;
+    background-color:  #7731b4;
+    color: #fff;
+    padding: 8px 8px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.project-url-wrapper button:hover {
+    opacity: 0.65;
+}

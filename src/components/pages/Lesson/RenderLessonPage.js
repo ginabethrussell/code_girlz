@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Link, useParams, useHistory } from 'react-router-dom';
 import lesson1 from '../../../markdown/lesson1.md';
+import ProjectSubmissionUrl from '../../common/ProjectUrlSubmission';
 import './LessonPage.css';
 
 function RenderLessonPage(props){
@@ -24,6 +25,7 @@ function RenderLessonPage(props){
         <div className="lesson">
             <Link to='/dashboard'>Return to Dashboard</Link>
             <ReactMarkdown source={lesson} /> 
+            <ProjectSubmissionUrl />
         </div>
       );
 }
