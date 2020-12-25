@@ -53,3 +53,28 @@
     font-size: 1.6rem;
     border-color: transparent;
 }
+
+@media screen and (max-width: 800px) {
+    .splash-wrapper {
+        width: 70%;
+        flex-direction:column;
+        align-items: center   
+    }
+    .splash-wrapper .info-wrapper {
+        width: 80%;     
+    }
+    .cta-button {
+        align-self: center;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .splash-wrapper {
+        width: 90%;  
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .splash-wrapper .info-wrapper {
+        width: 90%;     
+    }
+  }
