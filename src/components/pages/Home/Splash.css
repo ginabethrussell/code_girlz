@@ -53,6 +53,10 @@
     font-size: 1.6rem;
     border-color: transparent;
 }
+.cta-button:hover {
+    background-color: #00f5d4ff;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 800px) {
     .splash-wrapper {

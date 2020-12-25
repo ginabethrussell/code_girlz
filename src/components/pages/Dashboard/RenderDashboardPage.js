@@ -7,7 +7,6 @@ import data from '../../../classData';
 console.log(data);
 
 function RenderDashboardPage(props){
-    const {user} = props;
     const [moduleData, setModuleData] = useState(data);
     
     
@@ -27,16 +26,15 @@ function RenderDashboardPage(props){
     return (
         <div className='dashboard-wrapper'>
             <div className='header'>
-                <img src={developerLogo} className="developer-logo" alt="girl-developer-logo" />
-                <h1>Intro to Python Dashboard</h1>
-    
-                <Link className='home' to='/'>Log Out</Link>
+                <Link className='home' to='/'>Home</Link>
+                <h1>Intro to Python Dashboard</h1>  
             </div>
             <div className='module-container'>
                 {
                     moduleData.map(module => (
                         <div key={module.title} className='module'>
                             <h3>{module.title}</h3>
+                            <p>{module.description}</p>
                             {
                                 module.lessonUrl !== null ?
                                 (<>

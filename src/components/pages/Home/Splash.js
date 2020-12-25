@@ -1,10 +1,12 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import './Splash.css';
-import developerLogo from '../../../developer.svg';
 import ginaBitmoji from '../../../gina.png';
 
 
 function Splash () {
+    const history = useHistory();
+    console.log(history);
 
     return(
         <div className='splash-wrapper'>
@@ -23,7 +25,7 @@ function Splash () {
             </p>
     
             <p>Would you like to try learning to code?</p>
-            <button className='cta-button'>Let's Get Started</button>  
+            <button onClick={() => history.push('/dashboard')}className='cta-button'>Let's Get Started</button>  
              
             </div>       
         </div>

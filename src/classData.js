@@ -2,6 +2,7 @@ const classData = [
 {
     id: '1',
     title: '1. Intro to Python and Repl.it',
+    description: 'In this first lesson, learn about Python, how to use Repl.it, how to print to the screen, and how to leave comments for yourself and other developers.',
     lessonUrl: 'https://docs.google.com/document/d/1U8_I7Y8wZjNpNrWTnQ4cxwuZvX-Dep_TVqt13q24jkI/edit?usp=sharing',
     challengeUrl: 'https://docs.google.com/document/d/1jqUMJOVLQgDsSsURhBAA1kbRBXXm-3D1FRrfIJxUsPk/edit?usp=sharing',
     projectUrl: null,
