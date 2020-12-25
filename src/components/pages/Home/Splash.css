@@ -1,0 +1,84 @@
+.splash-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+}
+ 
+.splash-wrapper .logo-wrapper {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.splash-wrapper .logo-wrapper img {
+   width: 80%;
+}
+
+.splash-wrapper .info-wrapper {
+    width: 60%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.splash-wrapper .info-wrapper h2 {
+    font-size: 2.4rem;
+    color: #f15bb5;
+    font-family: "Permanent Marker", sans-serif;
+    text-transform: uppercase;
+}
+
+.splash-wrapper .info-wrapper h3 {
+    font-size: 1.8rem;
+    color: #222426;
+    font-weight: 600;
+    font-style: italic;
+    margin: 0;
+}
+
+.splash-wrapper .info-wrapper p {
+    font-size: 1.6rem;
+    color: #222426;
+}
+
+.cta-button {
+    background-color: #f15bb5ff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    border-color: transparent;
+}
+.cta-button:hover {
+    background-color: #00f5d4ff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .splash-wrapper {
+        width: 70%;
+        flex-direction:column;
+        align-items: center   
+    }
+    .splash-wrapper .info-wrapper {
+        width: 80%;     
+    }
+    .cta-button {
+        align-self: center;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .splash-wrapper {
+        width: 90%;  
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .splash-wrapper .info-wrapper {
+        width: 90%;     
+    }
+  }

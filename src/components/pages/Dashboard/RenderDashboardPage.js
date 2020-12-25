@@ -1,26 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useHistory, useRouteMatch } from 'react-router-dom';
 import './DashboardPage.css';
-import wizard from '../../../wizard.png';
+import developerLogo from '../../../developer.svg';
 import data from '../../../classData';
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
-import LockOpenOutlinedIcon from '@material-ui/icons/LockOpenOutlined';
+
 console.log(data);
 
 function RenderDashboardPage(props){
-    const {user} = props;
     const [moduleData, setModuleData] = useState(data);
-    const [isDisabled, setIsDisabled] = useState(true);
-    const [unlockCode, setunlockCode] = useState('');
+    
     
     const history = useHistory();
     const match = useRouteMatch(); 
-    const handleUnlock = (e) => {
-        setunlockCode(e.target.value);
-        if(e.target.value === '123'){
-            setIsDisabled(false);
-        }
-    }
+    
     const handleLessonSelection = (id) => {
         history.push(`${match.url}/lesson${id}`);  
     };
@@ -34,28 +26,27 @@ function RenderDashboardPage(props){
     return (
         <div className='dashboard-wrapper'>
             <div className='header'>
-                <img src={wizard} className="wizard-logo" alt="logo" />
-                <h1>Intro to Python - {user.username}'s Dashboard</h1>
-    
-                <Link className='home' to='/'>Log Out</Link>
+                <Link className='home' to='/'>Home</Link>
+                <h1>Intro to Python Dashboard</h1>  
             </div>
             <div className='module-container'>
                 {
                     moduleData.map(module => (
                         <div key={module.title} className='module'>
                             <h3>{module.title}</h3>
+                            <p>{module.description}</p>
                             {
                                 module.lessonUrl !== null ?
                                 (<>
                                 <div className='activities'>
-                                <button disabled={!module.enabled} className='dashboard' onClick={()=>{handleLessonSelection(module.id)}}><span className='lock-icon'><LockOutlinedIcon/></span>Lesson</button>
-                                <button disabled={!module.enabled} className='dashboard' onClick={() => {handleChallengeSelection(module.id)}}><span className='lock-icon'><LockOutlinedIcon/></span>Challenge</button>
+                                <button  className='dashboard' onClick={()=>{handleLessonSelection(module.id)}}>Lesson</button>
+                                <button  className='dashboard' onClick={() => {handleChallengeSelection(module.id)}}>Challenge</button>
                                     {/* <a href={`${module.lessonUrl}`} target='_blank'>Lesson</a>
                                     <a href={`${module.challengeUrl}`} target='_blank'>Challenge</a> */}
                                 </div>
                                 </>) :
                                 (<>
-                                    <button disabled={!module.enabled} className='dashboard' onClick={() => {handleProjectSelection(module.id)}}><span className='lock-icon'><LockOutlinedIcon/></span><span>Project</span></button>
+                                    <button disabled={!module.enabled} className='dashboard' onClick={() => {handleProjectSelection(module.id)}}>Project</button>
                                     {/* <a href={`${module.projectUrl}`} target='_blank'>Project {module.projectNumber}</a> */}
                                 </>)
                             }   

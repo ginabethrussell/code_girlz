@@ -1,12 +1,12 @@
 import React from 'react';
 import './HomePage.css';
-import LoginForm from './LoginForm';
+import Splash from './Splash';
 
-function RenderHomePage(props){
-    const {loginUser} = props;
+function RenderHomePage(){
+   
     return (
         <div className='home-wrapper'>
-                <LoginForm loginUser={loginUser}/>
+                <Splash />
         </div>
     );
 }

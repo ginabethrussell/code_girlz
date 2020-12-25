@@ -4,11 +4,11 @@ import Header from '../../common/Header';
 import Footer from '../../common/Footer';
 
 function LessonPageContainer(props) {
-    const {loginUser, lessonId} = props;
+    const {lessonId} = props;
     return (
         <>
             <Header />
-            <RenderLessonPage lessonId={lessonId} loginUser={loginUser}/>
+            <RenderLessonPage lessonId={lessonId} />
             <Footer />
         </>
     );

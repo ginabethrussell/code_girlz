@@ -1,8 +1,8 @@
 .home-wrapper {
-    background:url('../../../geometry.png') #4dbecd;
+    background:url('../../../geometry.png') #00f5d4;
     background-size: cover;
     background-blend-mode: multiply;
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
