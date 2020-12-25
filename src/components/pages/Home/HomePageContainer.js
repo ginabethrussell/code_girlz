@@ -3,12 +3,12 @@ import RenderHomePage from './RenderHomePage';
 import Header from '../../common/Header';
 import Footer from '../../common/Footer';
 
-function HomePageContainer(props) {
-    const {loginUser} = props;
+function HomePageContainer() {
+    
     return (
         <>
             <Header />
-            <RenderHomePage loginUser={loginUser}/>
+            <RenderHomePage />
             <Footer />
         </>
     );

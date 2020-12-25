@@ -7,18 +7,13 @@
   pointer-events: none;
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
 .App-header {
   width: 100%;
   display: flex;
 }
 
 .App-main {
-  background:url('./geometry.png') #4dbecd;
+  background:url('./geometry.png') #00f5d4;
   ;
   background-size: cover;
   background-blend-mode: multiply;
@@ -31,13 +26,10 @@
   color: white;
 }
 
-
-/* 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+/* CSS HEX 
+--amethyst: #9b5de5ff;
+--magenta-crayola: #f15bb5ff;
+--minion-yellow: #fee440ff;
+--capri: #00bbf9ff;
+--sea-green-crayola: #00f5d4ff;
+*/

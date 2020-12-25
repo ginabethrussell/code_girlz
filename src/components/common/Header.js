@@ -1,5 +1,5 @@
 import React from 'react';
-import wizard from '../../wizard.png';
+import developerLogo from '../../developer.svg';
 import './Header.css';
 
 function Header () {
@@ -7,10 +7,10 @@ function Header () {
         <div className="header-wrapper">
             <div className="navbar-wrapper">
                 <div className="logo">
-                    <img src={wizard} className="App-logo" alt="logo" />
-                    <h2>Coding Wizards</h2>
+                    <img src={developerLogo} className="App-logo" alt="girl-developer-logo" />
+                    <h2>Code Girlz</h2>
                 </div>
-                <a href="https://www.awesomeinc.org/learn">Awesome Inc U</a>
+                <h2>Creating Cool Things with Code!</h2>
             </div>
         </div>
     );

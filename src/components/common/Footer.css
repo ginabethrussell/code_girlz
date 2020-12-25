@@ -4,9 +4,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #7731b4;
-    color: #ffffff;
+    background-color: #fff;
+    color: #f15bb5;
+    font-family: 'Montserrat', sans-serif;
 }
 .footer-wrapper p{
     font-size: 1.8rem;
+    font-family: "Permanent Marker", sans-serif;
 }

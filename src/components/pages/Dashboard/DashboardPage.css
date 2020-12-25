@@ -1,5 +1,5 @@
 .dashboard-wrapper {
-    background:url('../../../geometry.png') #4dbecd;
+    background:url('../../../geometry.png') #00f5d4;
     background-size: cover;
     background-blend-mode: multiply;
     min-height: 80vh;
@@ -9,7 +9,7 @@
     justify-content: center;
     padding: 2rem;
 }
-.dashboard-wrapper .wizard-logo {
+.dashboard-wrapper .developer-logo {
     height: 10vmin;
     pointer-events: none;
     margin-right: 2rem;
