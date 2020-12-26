@@ -3,9 +3,9 @@ import { Link, useParams } from 'react-router-dom';
 import Projects from '../../projects/projects';
 import './ProjectPage.css';
 
-function RenderProjectPage(props){
+function RenderProjectPage(){
     const params = useParams();
-    const nextproject = `project${params.id}`
+    const nextproject = `project${params.id}`;
    
     return (
         <div className="project">
