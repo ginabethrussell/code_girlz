@@ -7,7 +7,7 @@ export default function MadLibs (){
         <div>
             <h1>Mad Libs Project 1</h1>
             <h2>Overview</h2>
-            <a href='https://www.loom.com/share/7fedd457c88340aa9f32d1facf90e773'>&#x1f4f9; Create a MAD LIBS Game with Python Video Overview</a>
+            <a href='#'>&#x1f4f9; Create a MAD LIBS Game with Python Video Overview</a>
             <p>In this project you will get user input to complete and print a Mad Libs Story for your user.</p>
 
             <h5>To complete this project, you should have completed the modules: Intro to Python and Repl.it, Variables and Data Types, and User Input 
