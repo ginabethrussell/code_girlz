@@ -7,7 +7,7 @@ export default function Challenge1 (){
         <div>
             <h1> Intro to Python and Repl.it Challenge</h1>
             <h2>Summary</h2>
-            <a href='https://www.loom.com/share/1ca0a01bcc48451c8eb0425a850d6194'>&#x1f4f9; Watch the intro video</a>
+            <a href='#'>&#x1f4f9; Watch the intro video</a>
             <h3>You should have completed the Intro to Python and Repl.it Lesson or have previous knowledge of the following.</h3>
             <ul>
                 <li>I have an account on repl.it</li>
