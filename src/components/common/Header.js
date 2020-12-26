@@ -9,8 +9,7 @@ function Header () {
                 <img src={developerLogo} className="App-logo" alt="girl-developer-logo" />
                 <h2>Code Girlz</h2>
             </div>
-            <h2 className='tagline'>Creating Cool Things with Code!</h2>
-           
+            <h2 className='tagline'>Creating Cool Things with Code!</h2>  
         </div>
     );
 }

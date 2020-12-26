@@ -1,7 +1,7 @@
 
 .lesson {
   font-size: 1.6rem;
-  font-family: Poppins, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #494331;
   font-weight: 400;
   width: 75%;
@@ -47,11 +47,11 @@
   font-size: 1.6rem;
   margin-bottom: 1.3rem;
 }
-.lesson p a {
+.lesson p a, .lesson a, .lesson li a {
   text-decoration: none;
-  color: #7731b4;
+  color: #f15bb5ff;
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 .lesson code {
   font-family: "Courier New", monospace;

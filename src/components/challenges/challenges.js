@@ -1,8 +1,8 @@
 import React from 'react';
-import Lesson1 from './Lesson1';
+import Challenge1 from './Challenge1';
 
   const Components = {
-    lesson1: Lesson1,
+    challenge1: Challenge1,
   };
   
   export default block => {
@@ -11,6 +11,5 @@ import Lesson1 from './Lesson1';
     }
     return React.createElement(
         () => <div>Coming Soon</div>,
-        { key: block._uid }
       );
   };

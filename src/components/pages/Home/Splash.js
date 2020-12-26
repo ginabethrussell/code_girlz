@@ -18,14 +18,14 @@ function Splash () {
             <h3>I'm a Software Developer and a Teacher.</h3>
             <p>
                 I started my own journey teaching myself to code so I could introduce students to the possibilities of computer science.
-                I wanted every girl to have the opportunity to express their own creativity and develop problem solving skills by building fun projects with code. 
+                I wanted every girl to have the opportunity to express her own creativity and to develop her problem solving skills by building fun projects with code. 
             </p>
             <p>   
                 Along the way I discovered I love the creativity, detailed analytical thinking, and thoughtful problem solving coding provides.
             </p>
     
             <p>Would you like to try learning to code?</p>
-            <button onClick={() => history.push('/dashboard')}className='cta-button'>Let's Get Started</button>  
+            <button onClick={() => history.push('/dashboard')}className='cta-button'>Get Started</button>  
              
             </div>       
         </div>

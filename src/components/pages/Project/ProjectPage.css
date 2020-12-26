@@ -17,9 +17,7 @@
     padding-bottom: .5rem;
     font-weight: 600;
   }
-  .project h3:last-of-type {
-      border: none;
-  }
+  
   .project h1 {
     margin-top: 0;
     font-size: 3.6rem;
@@ -47,7 +45,7 @@
     font-size: 1.6rem;
     margin-bottom: 1.3rem;
   }
-  .project p a {
+  .project p a, .project a, .project li a {
     text-decoration: none;
     color: #7731b4;
     font-size: 1.8rem;
