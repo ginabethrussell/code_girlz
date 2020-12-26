@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useParams, useHistory } from 'react-router-dom';
+import { Link, useParams} from 'react-router-dom';
 import Lessons from "../../lessons/lessons";
 import './LessonPage.css';
 
