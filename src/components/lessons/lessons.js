@@ -9,4 +9,8 @@ import Lesson1 from './Lesson1';
     if (typeof Components[block.component] !== "undefined") {
       return React.createElement(Components[block.component]);
     }
+    return React.createElement(
+        () => <div>The component {block.component} has not been created yet.</div>,
+        { key: block._uid }
+      );
   };
