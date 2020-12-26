@@ -38,16 +38,15 @@ function RenderDashboardPage(props){
                             {
                                 module.lessonUrl !== null ?
                                 (<>
-                                <div className='activities'>
-                                <button  className='dashboard' onClick={()=>{handleLessonSelection(module.id)}}>Lesson</button>
-                                <button  className='dashboard' onClick={() => {handleChallengeSelection(module.id)}}>Challenge</button>
-                                    {/* <a href={`${module.lessonUrl}`} target='_blank'>Lesson</a>
-                                    <a href={`${module.challengeUrl}`} target='_blank'>Challenge</a> */}
-                                </div>
+                                    <div className='activities'>
+                                        <button  className='dashboard' onClick={()=>{handleLessonSelection(module.id)}}>Lesson</button>
+                                        <button  className='dashboard' onClick={() => {handleChallengeSelection(module.id)}}>Challenge</button>
+                                    </div>
                                 </>) :
                                 (<>
-                                    <button disabled={!module.enabled} className='dashboard' onClick={() => {handleProjectSelection(module.id)}}>Project</button>
-                                    {/* <a href={`${module.projectUrl}`} target='_blank'>Project {module.projectNumber}</a> */}
+                                    <div className='activities'>
+                                        <button className='dashboard' onClick={() => {handleProjectSelection(module.id)}}>Project</button>
+                                    </div>
                                 </>)
                             }   
                             

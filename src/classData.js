@@ -26,7 +26,7 @@ const classData = [
 },
 {
     id: 'madlibs',
-    title: 'Mad Libs',
+    title: 'Project 1 - Mad Libs',
     lessonUrl: null,
     challengeUrl: null,
     projectNumber: '1',
@@ -60,7 +60,7 @@ const classData = [
 },
 {
     id: 'rocketlaunch',
-    title: 'Rocket Launch',
+    title: 'Project 2 - Rocket Launch',
     lessonUrl: null,
     challengeUrl: null,
     projectNumber: '2',
@@ -85,7 +85,7 @@ const classData = [
 },
 {
     id: 'battleship',
-    title: '1D Battleship',
+    title: 'Project 3 - 1D Battleship',
     lessonUrl: null,
     challengeUrl: null,
     projectNumber: '3',
@@ -110,7 +110,7 @@ const classData = [
 },
 {
     id: 'camelrace',
-    title: 'The Camel Race Game',
+    title: 'Project 4 - The Camel Race Game',
     lessonUrl: null,
     challengeUrl: null,
     projectNumber: '4',
@@ -119,7 +119,7 @@ const classData = [
 },
 {
     id: 'capstone',
-    title: 'Capstone Project',
+    title: 'Project 5 - Capstone',
     lessonUrl: null,
     challengeUrl: null,
     projectNumber: '5',

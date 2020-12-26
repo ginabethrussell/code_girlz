@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Lesson1 (){
 
@@ -6,7 +7,7 @@ export default function Lesson1 (){
         <div>
             <h1>Intro to Python and Repl.it</h1>
             <h2>Summary</h2>
-            <a href='https://www.loom.com/share/f0a11e2610664b729620c4ab23aeec1d'>Watch the intro video</a>
+            <a href='https://www.loom.com/share/f0a11e2610664b729620c4ab23aeec1d'>&#x1f4f9; Watch the intro video</a>
             <h3>What am I learning about today?</h3>
             <ul>
                 <li>What is Python?</li>
@@ -35,11 +36,11 @@ export default function Lesson1 (){
             <p>Text-based programs can be written using many tools. If you have programmed in Scratch, you have used the Scratch website to write and save your programs. </p>
             <p>To write Python, we need to use a tool that will be able to understand and run our code. Repl.it has a Python compiler/interpreter built-in so it’s a great place for us to start. </p>
             <p>Using Repl.it is free. Let’s set up your account together.</p>   
-            <a href='https://www.loom.com/share/072364d175fe47ffa2aac655fd28aa88'>Set Up Your Repl.it Account</a>
+            <a href='https://www.loom.com/share/072364d175fe47ffa2aac655fd28aa88'>&#x1f4f9; Set Up Your Repl.it Account</a>
             <h3>Writing Your First Program</h3>
             <p>Now that you have an account, let’s write our first program. A common tradition is to write a “Hello World” program whenever a programmer uses a new platform or learns a new language. </p>
             <p>Let’s do that together.</p>
-            <a href='https://www.loom.com/share/ec95e0156de24779a2b16a49fdb54ac3'>Code Along - Hello World</a>
+            <a href='https://www.loom.com/share/ec95e0156de24779a2b16a49fdb54ac3'>&#x1f4f9; Code Along - Hello World</a>
             <h3>The print Command and Comments</h3>
             <h4>print</h4>
             <p>Python has several built-in commands created for us that make it easy to get started writing programs. The first one we used in the hello_world program is print. Print does just what we might expect. It prints whatever we place inside the parentheses just after the command.</p>
@@ -85,6 +86,8 @@ export default function Lesson1 (){
             <p>You finished Intro to Python Lesson 1.</p>
             <p> Take a well earned break and then practice your new Python skills in Challenge 1 </p>
             <p>See you soon. Happy Coding!</p>
+
+            <Link to='/dashboard/challenge1'>Next Up: Lesson 1 Challenges</Link>
     </div>
     );
 }

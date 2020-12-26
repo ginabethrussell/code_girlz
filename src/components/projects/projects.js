@@ -1,8 +1,8 @@
 import React from 'react';
-import Lesson1 from './Lesson1';
+import ProjectMadLibs from './ProjectMadLibs';
 
   const Components = {
-    lesson1: Lesson1,
+    projectmadlibs: ProjectMadLibs,
   };
   
   export default block => {
@@ -11,6 +11,5 @@ import Lesson1 from './Lesson1';
     }
     return React.createElement(
         () => <div>Coming Soon</div>,
-        { key: block._uid }
       );
   };
