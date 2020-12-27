@@ -25,7 +25,7 @@ export default function Lesson2 (){
             </ul>
             <h3>Materials You Will Need</h3>
             <ul>
-                <li>Your Laptop/Computer</li>
+                <li>&#x1f4bb; Your Laptop/Computer</li>
                 <li>Chrome Browser</li>
                 <li>A curious mind and a little persistence!</li>
             </ul>
@@ -60,7 +60,7 @@ export default function Lesson2 (){
                 <li>Use short, but descriptive names (usually not single letters)</li>
             </ol>
            <a href='#'>&#x1f4f9; Watch this video for review &amp; Intro to Stop and Do</a>
-            <h3>Stop and Do:</h3>
+            <h3>&#x1f4bb; Stop and Do:</h3>
             <p>Let’s stop and practice creating and using variables. Complete the following tasks before moving on.</p>
             <ul>
                 <li>Create a new repl.it program</li>
@@ -116,7 +116,7 @@ export default function Lesson2 (){
             <code>&lt; class 'str' &gt;</code>
             <p>This can look a little cryptic, but if you check out the text between the quotes, you will find str, short for string.</p>
             <a href='#'>&#x1f4f9; Watch this video for review &amp; Intro to Stop and Do</a>
-            <h3>Stop and Do:</h3>
+            <h3>&#x1f4bb; Stop and Do:</h3>
             <p>Let’s stop and practice creating variables of type string, int, and float. Complete the following tasks before moving on.</p>
             <ul>
                 <li>Create a new repl.it program</li>
@@ -152,7 +152,7 @@ export default function Lesson2 (){
                 <li>Check for opening and closing quotation marks when using strings.</li>
             </ol>
             <a href='#'>&#x1f4f9; Watch this video for review &amp; Intro to Stop and Do</a>
-            <h3>Stop and Do:</h3>
+            <h3>&#x1f4bb; Stop and Do:</h3>
             <p>Let’s stop and practice printing text,  strings, ints, floats, and variables using concatenation +  or commas. Complete the following tasks before moving on.</p>
             <ul>
                 <li>Open your repl.it variables_practice program</li>

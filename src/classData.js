@@ -23,7 +23,7 @@ const classData = [
 {
     id: 'madlibs',
     title: 'Project 1 - Mad Libs',
-    description: 'Coming Soon',
+    description: 'It\'s time to have some fun! Use what you\'ve learned about data types, variables, user input and printing to create a Mad Libs Game.',
     projectNumber: '1',
     module: false,
     project: true,

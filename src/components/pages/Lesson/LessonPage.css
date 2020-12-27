@@ -1,7 +1,15 @@
+/* CSS HEX 
+--amethyst: #9b5de5ff;
+--magenta-crayola: #f15bb5ff;
+--minion-yellow: #fee440ff;
+--capri: #00bbf9ff;
+--sea-green-crayola: #00f5d4ff;
+-- text color: #494331
+*/
 
 .lesson {
   font-size: 1.6rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Karla', sans-serif;
   color: #494331;
   font-weight: 400;
   width: 75%;
@@ -18,12 +26,14 @@
   margin-bottom: 1.2rem;
   padding-bottom: .5rem;
   font-weight: 600;
-
+}
+.lesson h2 {
+  border-bottom: none;
 }
 .lesson h1 {
   margin-top: 0;
   font-size: 3.6rem;
-  color: #7731b4;
+  color:#9b5de5ff;
   margin: 1.5rem 0 .5rem;
   font-weight: 600;
   line-height: 1.42;
@@ -31,7 +41,7 @@
 }
 .lesson h2 {
   font-size: 2.6rem;
-  color: #4dbecd;
+  color: #00bbf9ff;
 }
 .lesson h3 {
   font-size: 2.2rem;
@@ -49,7 +59,7 @@
 }
 .lesson p a, .lesson a, .lesson li a {
   text-decoration: none;
-  color: #f15bb5ff;
+  color: #9b5de5ff;
   font-size: 1.8rem;
   font-weight: 400;
 }
@@ -62,7 +72,7 @@
 .lesson a:hover,
 .lesson a:focus,
 .lesson a:active {
-  color: #4dbecd;
+  color:#f15bb5ff;
 }
 .lesson ul {
   list-style-type: circle;

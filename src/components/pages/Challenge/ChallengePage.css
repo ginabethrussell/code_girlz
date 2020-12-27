@@ -1,7 +1,14 @@
-
+/* CSS HEX 
+--amethyst: #9b5de5ff;
+--magenta-crayola: #f15bb5ff;
+--minion-yellow: #fee440ff;
+--capri: #00bbf9ff;
+--sea-green-crayola: #00f5d4ff;
+-- text color: #494331
+*/
 .challenge {
     font-size: 1.6rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Karla', sans-serif;
     color: #494331;
     font-weight: 400;
     width: 75%;
@@ -20,10 +27,13 @@
     font-weight: 600;
   
   }
+  .challenge h2 {
+    border-bottom: none;
+  }
   .challenge h1 {
     margin-top: 0;
     font-size: 3.6rem;
-    color: #7731b4;
+    color: #9b5de5ff;
     margin: 1.5rem 0 .5rem;
     font-weight: 600;
     line-height: 1.42;
@@ -31,16 +41,16 @@
   }
   .challenge h2, .challenge h2 a {
     font-size: 2.6rem;
-    color: #4dbecd;
+    color: #00bbf9ff;
   }
   .challenge li a {
     text-decoration: none;
-    color: #7731b4;
+    color: #9b5de5ff;
     font-size: 1.6rem;
     font-weight: 300;
   }
   .challenge li a:hover {
-    color:  #4dbecd;
+    color:  #f15bb5ff;
   }
   .challenge h3 {
     font-size: 2.2rem;
@@ -59,7 +69,7 @@
 
   .challenge a, .challenge p a {
     text-decoration: none;
-    color: #7731b4;
+    color: #9b5de5ff;
     font-size: 1.8rem;
     font-weight: 300;
   }
@@ -72,7 +82,7 @@
   .challenge a:hover,
   .challenge a:focus,
   .challenge a:active {
-    color: #4dbecd;
+    color: #f15bb5ff;
   }
   .challenge ul {
     list-style-type: circle;

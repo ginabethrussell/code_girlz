@@ -54,14 +54,14 @@
 .module h3 {
     font-size: 1.8rem;
     font-weight: 600;
-    color:#222426;
+    color: #494331;
     margin-bottom: 0;
     font-weight: 400;
 }
 
 .module p {
     font-size: 1.6rem;
-    color: #222426;
+    color: #494331;
 } 
 .module .activities {
     display: flex;
@@ -73,7 +73,7 @@
 
 .module button.dashboard {
     font-size: 1.6rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Karla', sans-serif;
     border-radius: 0.5rem;
     border: 0.0625rem solid #f15bb5ff;
     width: 100px;
@@ -101,7 +101,7 @@
     .dashboard-wrapper .header {
         width: 90%;
     }
-    .dashboard-wrapper .wizard-logo {
+    .dashboard-wrapper .developer-logo {
         height: 20vmin;
         margin-right: 0;
     }

@@ -24,7 +24,7 @@ export default function Lesson1 (){
             </ul>
             <h3>Materials You Will Need</h3>
             <ul>
-                <li>Your Laptop/Computer</li>
+                <li>&#x1f4bb; Your Laptop/Computer</li>
                 <li>Chrome Browser</li>
                 <li>A curious mind and a little persistence!</li>
             </ul>
@@ -55,7 +55,7 @@ export default function Lesson1 (){
                 <li>The command print is also written in all lowercase letters. </li>
                 <li>Words and sentences (we call those **strings **in programming) that we place inside the parentheses also need to be inside “ “ quotation marks.</li>
             </ul>
-            <h3>Stop and Do:</h3>
+            <h3>&#x1f4bb; Stop and Do:</h3>
             <p>Before we learn our next command, let’s stop and practice. Complete the following tasks before moving on.</p>
             <ul>
                 <li>Open your repl.it hello_world program</li>
@@ -75,7 +75,7 @@ export default function Lesson1 (){
             <code>
                 # This is a Python Comment
             </code>
-            <h3>Stop and Do:</h3>
+            <h3>&#x1f4bb; Stop and Do:</h3>
             <h4>Complete the following tasks before moving on.</h4>
             <ul>
                 <li>Open your repl.it hello_world program</li>
