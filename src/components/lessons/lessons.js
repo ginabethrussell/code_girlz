@@ -1,8 +1,10 @@
 import React from 'react';
 import Lesson1 from './Lesson1';
+import Lesson2 from './Lesson2';
 
   const Components = {
     lesson1: Lesson1,
+    lesson2: Lesson2
   };
   
   export default block => {
@@ -11,6 +13,5 @@ import Lesson1 from './Lesson1';
     }
     return React.createElement(
         () => <div>Coming Soon</div>,
-        { key: block._uid }
       );
   };

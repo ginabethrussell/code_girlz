@@ -2,31 +2,31 @@ const classData = [
 {
     id: '1',
     title: '1. Intro to Python and Repl.it',
-    description: 'In this first lesson, learn about Python, how to use Repl.it, how to print to the screen, and how to leave comments for yourself and other developers.',
+    description: 'Welcome to Intro to Python. In this first lesson we will learn about why we should learn Python, how we can use Repl.it to write our code, how to print to the screen, and how to leave comments for ourselves and other developers.',
     lessonUrl: 'https://docs.google.com/document/d/1U8_I7Y8wZjNpNrWTnQ4cxwuZvX-Dep_TVqt13q24jkI/edit?usp=sharing',
     challengeUrl: 'https://docs.google.com/document/d/1jqUMJOVLQgDsSsURhBAA1kbRBXXm-3D1FRrfIJxUsPk/edit?usp=sharing',
     projectUrl: null,
-    enabled: true
 },
 {
     id: '2',
     title: '2. Variables and Data Types',
+    description: 'Computer programs are all about data. Some type of input is passed into a program, the program acts on it in some way, and then some new output is passed back to the user. In this lesson we will learn about types of data we can work with in Python and how we can store this data in variables.',
     lessonUrl: 'https://docs.google.com/document/d/18PSq_RQuBNw-tq0qskXB1emhEvRBlRFE9ju9MXPCIfY/edit?usp=sharing',
     challengeUrl: 'https://docs.google.com/document/d/11k6r0BUJGiPIt8aKmEZZRm_dHlurqVC7OM0DdbIy2VM/edit?usp=sharing',
     projectUrl: null,
-    enabled: false
 },
 {
     id: '3',
     title: '3. User Input',
+    description: '',
     lessonUrl: 'https://docs.google.com/document/d/1_DimHDhbzIp-ToCw-uRMrBknZQLPMNrKnvvCLAxfxIY/edit?usp=sharing',
     challengeUrl: 'https://docs.google.com/document/d/1EG-N3QEWFAOl47phKUBo-xL3ZayWav-o8zvAM7OBfAo/edit?usp=sharing',
     projectUrl: null,
-    enabled: false
 },
 {
     id: 'madlibs',
     title: 'Project 1 - Mad Libs',
+    description: '',
     lessonUrl: null,
     challengeUrl: null,
     projectNumber: '1',

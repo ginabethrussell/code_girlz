@@ -87,7 +87,7 @@ export default function Lesson1 (){
             <p> Take a well earned break and then practice your new Python skills in Challenge 1 </p>
             <p>See you soon. Happy Coding!</p>
 
-            <Link to='/dashboard/challenge1'>Next Up: Lesson 1 Challenges</Link>
+            <Link to='/dashboard/challenge1'>Next Up: Lesson 1 Challenge</Link>
     </div>
     );
 }
