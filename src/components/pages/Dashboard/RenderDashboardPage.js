@@ -36,7 +36,7 @@ function RenderDashboardPage(props){
                             <h3>{module.title}</h3>
                             <p>{module.description}</p>
                             {
-                                module.lessonUrl !== null ?
+                                module.module?
                                 (<>
                                     <div className='activities'>
                                         <button  className='dashboard' onClick={()=>{handleLessonSelection(module.id)}}>Lesson</button>
