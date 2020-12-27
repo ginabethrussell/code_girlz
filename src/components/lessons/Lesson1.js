@@ -41,6 +41,7 @@ export default function Lesson1 (){
             <p>Now that you have an account, let’s write our first program. A common tradition is to write a “Hello World” program whenever a programmer uses a new platform or learns a new language. </p>
             <p>Let’s do that together.</p>
             <a href='#'>&#x1f4f9; Code Along - Hello World</a>
+            <iframe title='Code Along Hello World' frameborder="0" width="100%" height="500px" src="https://repl.it/@gbr4477/codealonghelloworld?lite=true"></iframe>
             <h3>The print Command and Comments</h3>
             <h4>print</h4>
             <p>Python has several built-in commands created for us that make it easy to get started writing programs. The first one we used in the hello_world program is print. Print does just what we might expect. It prints whatever we place inside the parentheses just after the command.</p>
@@ -64,6 +65,7 @@ export default function Lesson1 (){
                 <li>Change the P back to lowercase p and remove the quotation marks</li>
                 <li>Last, change the “Hello World” text to a new greeting message</li>  
             </ul>
+            <iframe title='Hello World Errors' frameborder="0" width="100%" height="500px" src="https://repl.it/@gbr4477/codealonghelloworlderrors?lite=true"></iframe>
             <h3>A note about all those red text messages in repl.it window:</h3>
             <p>If you completed the tasks above, repl.it displayed error messages to you in red text. I wanted to introduce you to these right away. Everyone, that’s right EVERYONE who learns to program, makes mistakes and gets error messages when running code. </p>
             <p>Don’t let this frustrate you or make you feel like you can’t learn. It’s just part of the process. Your computer needs exact directions; it can’t figure out what you meant. When you see an error message, just think of it as the computer’s way of saying, “I’m lost and don’t know what to do next.”</p>
@@ -82,7 +84,8 @@ export default function Lesson1 (){
                 <li>Add a comment that begins with the # symbol to the top of your program</li>
                 <li>Run the program to make sure it still works</li>
             </ul>
-             <h3>Congratulations! You did it.</h3>
+            <iframe title='Hello World Comments' frameborder="0" width="100%" height="500px" src="https://repl.it/@gbr4477/codealonghelloworldcomments?lite=true"></iframe>
+            <h3>Congratulations! You did it.</h3>
             <p>You finished Intro to Python Lesson 1.</p>
             <p> Take a well earned break and then practice your new Python skills in Challenge 1 </p>
             <p>See you soon. Happy Coding!</p>
