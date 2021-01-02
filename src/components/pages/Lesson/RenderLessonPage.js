@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import { Link, useParams} from 'react-router-dom';
 import Lessons from "../../lessons/lessons";
 import './LessonPage.css';
 
-function RenderLessonPage(props){
+function RenderLessonPage(){
     const params = useParams();
     const nextlesson = `lesson${params.id}`
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
    
     return (
         <div className="lesson">

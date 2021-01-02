@@ -7,7 +7,8 @@ export default function Lesson1 (){
         <div>
             <h1>Intro to Python and Repl.it</h1>
             <h2>Summary</h2>
-            <a href='#'>&#x1f4f9; Watch the intro video</a>
+            <h3>&#x1f4f9; Watch the overview video before getting started</h3>
+            <iframe frameborder="0" width="100%" height="500px" src="https://www.youtube.com/embed/bcNRcHgxLJY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h3>What am I learning about today?</h3>
             <ul>
                 <li>What is Python?</li>
